@@ -1,0 +1,48 @@
+fields:
+    titolo:
+        label: Titolo
+        span: storm
+        cssClass: col-md-4
+        type: text
+    slug:
+        label: Slug
+        span: storm
+        cssClass: col-md-4
+        preset:
+            field: titolo
+            type: slug
+        type: text
+    data_evento:
+        label: 'Data Evento'
+        span: storm
+        cssClass: col-md-4
+        mode: datetime
+        type: datepicker
+    testo:
+        label: Descrizione
+        span: storm
+        cssClass: col-md-12
+        size: ''
+        type: richeditor
+    poster:
+        label: 'Evento Poster'
+        mode: image
+        imageWidth: '1000'
+        imageHeight: '500'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    galleria_evento:
+        label: 'Galleria Evento'
+        mode: image
+        imageWidth: '1000'
+        imageHeight: '1000'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload

@@ -1,0 +1,11 @@
+plugin:
+    name: 'miniera.notizie::lang.plugin.name'
+    description: 'miniera.notizie::lang.plugin.description'
+    author: miniera
+    icon: oc-icon-ban
+    homepage: ''
+navigation:
+    main-menu-evento:
+        label: Evento
+        url: miniera/notizie/evento
+        icon: icon-archive

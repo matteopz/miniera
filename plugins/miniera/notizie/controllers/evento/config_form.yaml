@@ -1,0 +1,10 @@
+name: Evento
+form: $/miniera/notizie/models/evento/fields.yaml
+modelClass: Miniera\Notizie\Models\Evento
+defaultRedirect: miniera/notizie/evento
+create:
+    redirect: 'miniera/notizie/evento/update/:id'
+    redirectClose: miniera/notizie/evento
+update:
+    redirect: miniera/notizie/evento
+    redirectClose: miniera/notizie/evento

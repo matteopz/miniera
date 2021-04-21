@@ -1,0 +1,16 @@
+title = "Eventi"
+url = "/eventi"
+layout = "default"
+is_hidden = 0
+
+[builderList]
+modelClass = "Miniera\Notizie\Models\Evento"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "titolo"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% component 'builderList' %}
