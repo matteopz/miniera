@@ -1,0 +1,28 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: true
+        sortable: true
+    titolo:
+        label: titolo
+        type: text
+        searchable: true
+        sortable: true
+    slug:
+        label: slug
+        type: text
+    data_evento:
+        label: data_evento
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+    updated_at:
+        label: updated_at
+        type: datetime
+    deleted_at:
+        label: deleted_at
+        type: datetime

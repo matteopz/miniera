@@ -1,0 +1,4 @@
+title: Evento
+modelClass: Miniera\Notizie\Models\Evento
+toolbar:
+    buttons: reorder_toolbar
