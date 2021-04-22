@@ -1,0 +1,12 @@
+list: $/miniera/custom/models/evento/columns.yaml
+modelClass: Miniera\Custom\Models\Evento
+title: Eventi
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'miniera/custom/eventi/update/:id'

@@ -1,0 +1,11 @@
+plugin:
+    name: 'miniera.custom::lang.plugin.name'
+    description: 'miniera.custom::lang.plugin.description'
+    author: Miniera
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-evento:
+        label: Evento
+        url: miniera/custom/eventi
+        icon: icon-edit

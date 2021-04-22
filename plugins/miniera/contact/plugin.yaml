@@ -1,0 +1,6 @@
+plugin:
+    name: 'miniera.contact::lang.plugin.name'
+    description: 'miniera.contact::lang.plugin.description'
+    author: Miniera
+    icon: oc-icon-phone
+    homepage: ''

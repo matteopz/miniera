@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => 'smtp.mailgun.org',
+    'host' => 'smtp.gmail.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -55,10 +55,7 @@ return [
     |
     */
 
-    'from' => [
-        'address' => 'noreply@domain.tld',
-        'name' => 'OctoberCMS',
-    ],
+    'from' => ['address' => 'noreply@domain.tld', 'name' => 'OctoberCMS'],
 
     /*
     |--------------------------------------------------------------------------
@@ -84,7 +81,7 @@ return [
     |
     */
 
-    'username' => null,
+    'username' => 'pirolomatteo@gmail.com',
 
     /*
     |--------------------------------------------------------------------------
@@ -97,7 +94,7 @@ return [
     |
     */
 
-    'password' => null,
+    'password' => 'cRSHC?MaY$&qbFmXFc6J9CGJ#',
 
     /*
     |--------------------------------------------------------------------------
@@ -111,5 +108,11 @@ return [
     */
 
     'sendmail' => '/usr/sbin/sendmail -bs',
+    'to' => [
+        'address' => 'pirolomatteo@gmail.com',
+        'name' => 'Catch all email'
+    ],
+
+    'pretend' => false,
 
 ];
