@@ -1,0 +1,12 @@
+<header class="main-header">
+    <div class="container clearfix">
+        <h1 class ="logo">Miniera Site</h1>
+        <nav class="main-nav">
+            <ul>
+                <li class="{% if this.page.id == 'homepage' %} active {% endif %}"><a href="{{ 'homepage'|page }}">Homepage</a></li>
+                <li class="{% if this.page.id == 'eventi' %} active {% endif %}"><a href="{{ 'eventi'|page }}">Eventi</a></li>
+                <li class="{% if this.page.id == 'contatti' %} active {% endif %}"><a href="{{ 'contatti'|page }}">Contatti</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

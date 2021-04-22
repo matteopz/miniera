@@ -1,0 +1,10 @@
+name: Eventi
+form: $/miniera/custom/models/evento/fields.yaml
+modelClass: Miniera\Custom\Models\Evento
+defaultRedirect: miniera/custom/eventi
+create:
+    redirect: 'miniera/custom/eventi/update/:id'
+    redirectClose: miniera/custom/eventi
+update:
+    redirect: miniera/custom/eventi
+    redirectClose: miniera/custom/eventi

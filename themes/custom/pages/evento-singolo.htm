@@ -1,0 +1,39 @@
+title = "Evento Singolo"
+url = "/evento-singolo/evento/:slug"
+layout = "default"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Miniera\Custom\Models\Evento"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "titolo"
+notFoundMessage = "Record not found"
+==
+{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{% if record %}
+    <center><h1>{{ record.titolo }}</h1></center>
+
+    <img src="{{ record.poster.thumb(600, auto) }}">
+
+    <h3>{{ record.data }}</h3>
+
+    <h2>Descrizione</h2>
+    {{ record.descrizione|raw }}
+
+    <h3>Gallery</h3>
+    <ul class="gallery clearfix">
+        {% for image in record.gallery_evento %}
+        <li>
+            <a href="{{ image.path }}">
+                <img src="{{ image.thumb(100, 80, {'mode':'crop'}) }}">
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    {{ notFoundMessage }}
+{% endif %}

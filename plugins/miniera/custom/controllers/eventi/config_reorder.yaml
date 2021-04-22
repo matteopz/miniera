@@ -1,0 +1,4 @@
+title: Eventi
+modelClass: Miniera\Custom\Models\Evento
+toolbar:
+    buttons: reorder_toolbar
